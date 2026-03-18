@@ -10,7 +10,7 @@ Aplicación de consola en C# para gestionar los implementos del sistema: jugador
 
 ## UML
 El diagrama se encuentra en el archivo `uml.mmd`.
-
+https://drive.google.com/file/d/17L9XGA2ETWBN4N2K1R_p480s-HP9dcn3/view?usp=sharing
 ## Requisitos
 - .NET 6 o superior
 
