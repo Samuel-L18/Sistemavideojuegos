@@ -1,0 +1,29 @@
+classDiagram
+class Persona {
+  +int Id
+  +string Nombre
+}
+
+class Jugador {
+  +string Nickname
+  +int Nivel
+}
+
+class Videojuego {
+  +int Id
+  +string Nombre
+  +string Genero
+  +double Precio
+}
+
+class Partida {
+  +int Id
+  +DateTime Fecha
+  +int Puntaje
+  +int JugadorId
+  +int VideojuegoId
+}
+
+Persona <|-- Jugador
+Jugador --> Partida
+Videojuego --> Partida
