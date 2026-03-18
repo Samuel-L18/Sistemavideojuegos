@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="UML Videojuegos">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Persona -->
+        <mxCell id="2" value="Persona&#xa;----------------&#xa;Id:int&#xa;Nombre:string" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="200" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Jugador -->
+        <mxCell id="3" value="Jugador&#xa;----------------&#xa;Nickname:string&#xa;Nivel:int" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="300" y="50" width="200" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Videojuego -->
+        <mxCell id="4" value="Videojuego&#xa;----------------&#xa;Id:int&#xa;Nombre:string&#xa;Genero:string&#xa;Precio:double" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="50" y="250" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Partida -->
+        <mxCell id="5" value="Partida&#xa;----------------&#xa;Id:int&#xa;Fecha:DateTime&#xa;Puntaje:int&#xa;JugadorId:int&#xa;VideojuegoId:int" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="300" y="250" width="240" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Plataforma -->
+        <mxCell id="6" value="Plataforma&#xa;----------------&#xa;List&lt;Jugador&gt;&#xa;List&lt;Videojuego&gt;&#xa;List&lt;Partida&gt;" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="600" y="150" width="240" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Relaciones -->
+        <mxCell id="7" style="endArrow=block" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="8" style="endArrow=none" edge="1" parent="1" source="3" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="9" style="endArrow=none" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="10" style="endArrow=none" edge="1" parent="1" source="6" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="11" style="endArrow=none" edge="1" parent="1" source="6" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="12" style="endArrow=diamond" edge="1" parent="1" source="6" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
